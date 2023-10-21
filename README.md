@@ -1,4 +1,4 @@
-![Banner](tetr-js/tetrjslogoenhanced.svg)
+![Banner](tetr_js/tetrjslogoenhanced.svg)
 
 ### Default Controls:
 
@@ -16,5 +16,5 @@ Controls are configurable
 [https://redinstealth/tetr-js.github.io/](https://redinstealth/tetr-js.github.io/)
 
 ```
-This is a copy from the original Tetr.js with some changes
+This is a copy from the original Tetr.js Enhanced with some changes
 ```
