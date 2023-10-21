@@ -13,7 +13,7 @@ Controls are configurable
 - **Shift Right:** Right Arrow
 - **Restart:** R
 
-[https://redinstealth.github.io/tetr-js](https://redinstealth.github.io/tetr-js)
+[https://redinstealth.github.io/tetr.js](https://redinstealth.github.io/tetr.js)
 
 ```
 This is a copy from the original Tetr.js Enhanced with some changes
