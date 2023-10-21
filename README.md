@@ -1,4 +1,4 @@
-![Banner](tetr-js/tetrjslogoenhanced/svg)
+![Banner](tetr-js/tetrjslogoenhanced.svg)
 
 ### Default Controls:
 
