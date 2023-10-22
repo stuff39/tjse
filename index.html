@@ -107,7 +107,7 @@
       <nav class="menu on">
         <img style="margin: 0px" width="72%" src="tetr_js/tetrjslogoenhanced.svg">
         <!--      <h1 style="font-weight: 4;font-size: 2rem;margin: 0px">Tetr.js Enhanced</h1>-->
-        <p style="margin:0px">v1.0.0 <a class="link" href="changelog.html">(view changelog)</a></p>
+        <p style="margin:0px">v1.0.1 <a class="link" href="changelog.html">(view changelog)</a></p>
 <!--
         <p style=margin:3px>designed by simonlc<br>
           overhauled by farter<br>
@@ -198,7 +198,7 @@
       <nav id="go" class="menu">
         <div class="btn-container btn-container-bottom">
           <a class="btn" onclick="init(gametype,gameparams)">Retry</a>
-          <a class="btn btn-inline" onclick="init('/')" style="width: 50%;">Replay</a><a class="btn btn-inline" onclick="showreplaydata(curreplaydata())" style="width: calc(25% - .7rem); margin-left: .7rem"><i class="material-icons">&#xE161;</i></a>
+          <a class="btn btn-inline" onclick="init('replay')" style="width: 50%;">Replay</a><a class="btn btn-inline" onclick="showreplaydata(curreplaydata())" style="width: calc(25% - .7rem); margin-left: .7rem"><i class="material-icons">&#xE161;</i></a>
           <!--        <a class="btn highlight" onclick="menu(5,1);this.classList.remove('/')">Rankings</a>  Commented out rankings because they don't work-->
           <a class="btn" onclick="menu(0)">Back</a>
         </div>
@@ -534,7 +534,7 @@
         <p class="option-description">Enable the announcer
         </p>
         <div class="btn-group" style="margin-left: 5.5em">
-          <button id="Voice-0" onclick="saveSpecificSetting('Voice', 0)">Off</button>
+          <button id="Voice-0" onclick="saveSpecificSetting('Voice', 0)" class="active">Off</button>
           <button id="Voice-1" onclick="saveSpecificSetting('Voice', 1)">On</button>
         </div>
         <h4 class="option-header">Voicebank</h4>
