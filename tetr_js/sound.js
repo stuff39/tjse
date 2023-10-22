@@ -22,7 +22,7 @@ function Sound2() {
   var gametypes = "ppt,tgm,npm,yotipo,toj,nes,tf,99,com,party,ultimate,ace,tetrjs".split(",")
   var uitypes = "ppt,tgm,npm,yotipo,toj,nes,tf,99,com,party,ultimate,ace,tetrjs".split(",")
   var voxtypes = "alexey,friends,toj".split(",")
-  var wavenames = "alarm,bravo,levelup,step,endingstart,erase1,erase2,erase3,erase4,gameover,garbage,lock,tspin0,tspin1,tspin2,tspin3,piece0,piece1,piece2,piece3,piece4,piece5,piece6,harddrop,move,rotate,initialrotate,hold,initialhold,ready,go,linefall,b2b_erase4,b2b_tspin1,b2b_tspin2,b2b_tspin3,erase1,erase2,erase3,erase4,lose,ren1,ren2,ren3,tspin0,tspin1,tspin2,tspin3,win,ren/ren1,ren/ren2,ren/ren3,ren/ren4,ren/ren5,ren/ren6,ren/ren7,ren/ren8,ren/ren9,ren/ren10,ren/ren11,ren/ren12,ren/ren13,ren/ren14,ren/ren15,ren/ren16,ren/ren17,ren/ren18,ren/ren19,ren/ren20,b2b_erase4,b2b_tspin1,b2b_tspin2,b2b_tspin3".split(",");
+  var mp3enames = "alarm,bravo,levelup,step,endingstart,erase1,erase2,erase3,erase4,gameover,garbage,lock,tspin0,tspin1,tspin2,tspin3,piece0,piece1,piece2,piece3,piece4,piece5,piece6,harddrop,move,rotate,initialrotate,hold,initialhold,ready,go,linefall,b2b_erase4,b2b_tspin1,b2b_tspin2,b2b_tspin3,erase1,erase2,erase3,erase4,lose,ren1,ren2,ren3,tspin0,tspin1,tspin2,tspin3,win,ren/ren1,ren/ren2,ren/ren3,ren/ren4,ren/ren5,ren/ren6,ren/ren7,ren/ren8,ren/ren9,ren/ren10,ren/ren11,ren/ren12,ren/ren13,ren/ren14,ren/ren15,ren/ren16,ren/ren17,ren/ren18,ren/ren19,ren/ren20,b2b_erase4,b2b_tspin1,b2b_tspin2,b2b_tspin3".split(",");
   var soundtypes = "fixed,game,game,game,ui,game,game,game,game,ui,game,game,game,game,game,game,piece,piece,piece,piece,piece,piece,piece,game,game,game,game,game,game,ui,ui,game,vox,vox,vox,vox,vox,vox,vox,vox,vox,vox,vox,vox,vox,vox,vox,vox,vox,game,game,game,game,game,game,game,game,game,game,game,game,game,game,game,game,game,game,game,game,game,game,game,game".split(",");
   var sounds = {}
   var music = {}
@@ -41,21 +41,21 @@ function Sound2() {
     document.getElementById("sound-loading-bar").value = 0;
     
 
-    amountToLoad = wavenames.length
+    amountToLoad = mp3enames.length
     Howler.unload()
     sounds = {}
     music = {}
     voices = {}
     if (mySettings["Sound"] == 1) {
-      for (var i = 0; i < wavenames.length; i++) {
-        var iname = wavenames[i];
+      for (var i = 0; i < mp3enames.length; i++) {
+        var iname = mp3enames[i];
         
-        //          var wave = document.createElement("AUDIO");
+        //          var mp3e = document.createElement("AUDIO");
         switch (soundtypes[i]) {
           case "game":
 
             sounds[iname] = new Howl({
-              src: ["se/game/" + gametypes[settings.Soundbank] + "/" + iname + ".wav"],
+              src: ["se/game/" + gametypes[settings.Soundbank] + "/" + iname + ".mp3"],
               volume: mySettings.Volume / 100,
             });
             
@@ -63,7 +63,7 @@ function Sound2() {
           case "vox":
             if (settings.Voice == 1) {
             voices[iname] = new Howl({
-              src: ["vox/" + voxtypes[settings.Voicebank] + "/" + iname + ".wav"],
+              src: ["vox/" + voxtypes[settings.Voicebank] + "/" + iname + ".mp3"],
               volume: mySettings.Volume / 100,
             });
             }
@@ -78,7 +78,7 @@ function Sound2() {
               }
             }
             sounds[iname] = new Howl({
-              src: ["se/ui/" + gametypes[settings.Soundbank] + "/" + iname + language + ".wav"],
+              src: ["se/ui/" + gametypes[settings.Soundbank] + "/" + iname + language + ".mp3"],
               volume: mySettings.Volume / 100,
             });
             break;
@@ -103,7 +103,7 @@ function Sound2() {
                 }
               }
               sounds[iname] = new Howl({
-                    src: ["se/piece/" + piecetypes[settings.NextType] + "/" + iname + language + ".wav"],
+                    src: ["se/piece/" + piecetypes[settings.NextType] + "/" + iname + language + ".mp3"],
                     volume: mySettings.Volume / 100,
                 });
             }
@@ -139,13 +139,13 @@ function Sound2() {
           case "fixed":
             if (iname === "alarm") {
               sounds[iname] = new Howl({
-                src: ["se/fixed/" + iname + ".wav"],
+                src: ["se/fixed/" + iname + ".mp3"],
                 volume: mySettings.Volume / 100,
                 loop: true,
               });
             } else {
               sounds[iname] = new Howl({
-                src: ["se/fixed/" + iname + ".wav"],
+                src: ["se/fixed/" + iname + ".mp3"],
                 volume: mySettings.Volume / 100,
               });
             }
