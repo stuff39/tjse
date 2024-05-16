@@ -59,7 +59,7 @@
       <h3 id="ihs-indicator" class="flashing" style="display: none; margin-top: -2.9em">INITIAL</h3>
       <table id="stats">
         <tr id="nesratetr" style="display: none;">
-         <th class="white-border-span" style="font-size: .5em;"><b>Tetris</b> Rate</th>
+         <th class="white-border-span" style="font-size: .5em;"><b>Quad</b> Rate</th>
           <td id="nesrate" style="font-family: 'Roboto Mono'; font-weight: 500; font-size: 0.8em">0</td>
         </tr>
         <tr>
@@ -90,7 +90,7 @@
     </div>
     <div id="b">
       <canvas id="bgStack" class="" style=""></canvas>
-      <canvas id="stack">You need an up-to-date web browser to play this game.</canvas>
+      <canvas id="stack">You need an up-to-date web browser to use this software.</canvas>
       <canvas id="active"></canvas>
       <div id="msgdiv">
         <span id="msg"></span>
@@ -237,10 +237,10 @@
       </nav>
       <nav class="menu">
         <h1 style="font-weight: 4;font-size: 1.5rem;margin: 0px">Retro</h1>
-        <p style="margin: 0px">Classic game with a variety of options.</p>
+        <p style="margin: 0px">Classic mode with a variety of options.</p>
         <div style="margin: 0px" class="btn-container">
-          <h4 class="option-header">Game Type</h4>
-          <p class="option-description">A-Type: Play Forever
+          <h4 class="option-header">Type</h4>
+          <p class="option-description">A-Type: Continue Forever
             <br>B-Type: Reach 25 Lines
           </p>
           <div class="btn-group" style="margin-left: 4.34em">
@@ -289,7 +289,7 @@
             <button id="retro-drop-1" onclick="changeSetting('retro', 'drop', 1)">On</button>
           </div>
           <h4 class="option-header">Flashing Effect</h4>
-          <p class="option-description">Show a screen flash upon clearing a Tetris
+          <p class="option-description">Show a screen flash upon clearing a quad
           </p>
           <div class="btn-group" style="margin-left: 5.5em">
             <button id="retro-flash-0" onclick="changeSetting('retro', 'flash', 0)">Off</button>
@@ -311,7 +311,7 @@
             <button id="sprint-limit-2" onclick="changeSetting('sprint', 'limit', 2)">200</button>
           </div>
           <h4 class="option-header">Piece Set</h4>
-          <p class="option-description">The types of pieces used during the game</p>
+          <p class="option-description">The types of pieces used during the run</p>
           <div class="btn-group" style="margin-left: 3em">
             <button id="sprint-piece-0" onclick="changeSetting('sprint', 'piece', 0)">Standard</button>
             <button id="sprint-piece-1" onclick="changeSetting('sprint', 'piece', 1)">No I</button>
@@ -331,7 +331,7 @@
       </nav>
       <nav class="menu">
         <h1 style="font-weight: 4;font-size: 1.5rem;margin: 0px">Marathon</h1>
-        <p style="margin: 0px">Standard game. Aim for a high score.</p>
+        <p style="margin: 0px">Standard mode. Aim for a high score.</p>
         <h4 class="option-header">Goal</h4>
         <p class="option-description">Lines to reach before winning</p>
         <div class="btn-group" style="margin-left: 2.4em">
@@ -347,14 +347,14 @@
           <button id="marathon-cap-1" onclick="changeSetting('marathon', 'cap', 1)">On</button>
         </div>
         <h4 class="option-header">Entry Delay</h4>
-        <p class="option-description">Determines how long the game pauses between pieces</p>
+        <p class="option-description">Determines how long the software pauses between pieces</p>
         <div class="btn-group" style="margin-left: 3em">
           <button id="marathon-delay-0" onclick="changeSetting('marathon', 'delay', 0)">None</button>
           <button id="marathon-delay-1" onclick="changeSetting('marathon', 'delay', 1)">Short</button>
           <button id="marathon-delay-2" onclick="changeSetting('marathon', 'delay', 2)">Long</button>
         </div>
         <h4 class="option-header">0G Mode</h4>
-        <p class="option-description">Disable gravity for a more relaxed game</p>
+        <p class="option-description">Disable gravity for a more relaxed session</p>
         <div class="btn-group" style="margin-left: 5.5em">
           <button id="marathon-nograv-0" onclick="changeSetting('marathon', 'nograv', 0)">Off</button>
           <button id="marathon-nograv-1" onclick="changeSetting('marathon', 'nograv', 1)">On</button>
@@ -370,7 +370,7 @@
       </nav>
       <nav class="menu">
         <h1 style="font-weight: 4;font-size: 1.5rem;margin: 0px">Master</h1>
-        <p style="margin: 0px">Super-fast game. Aim for 300 lines.</p>
+        <p style="margin: 0px">Super-fast mode. Aim for 300 lines.</p>
         <h4 class="option-header">Lockdown Mode</h4>
         <p class="option-description">Determines how the lockdown will function.
           <br>
@@ -495,7 +495,7 @@
           <p id="musValue" class="slidervalue"></p>
         </div>
         <h4 class="option-header">Soundbank</h4>
-        <p class="option-description">Modifies the audio bank of the game
+        <p class="option-description">Modifies the audio bank of the software
         </p>
         <div class="btn-group-list" style="">
           <button id="Soundbank-12" onclick="saveSpecificSetting('Soundbank', 12)">Tetr.js</button>
@@ -548,8 +548,8 @@
       </nav>
       <nav class="menu">
         <h1 style="font-weight: 4;font-size: 1.5rem;margin: 0px">Graphics</h1>
-        <h4 class="option-header">Game Size</h4>
-        <p class="option-description">The size the game takes in the browser window
+        <h4 class="option-header">Window Size</h4>
+        <p class="option-description">The size the software takes in the browser window
         </p>
         <div class="btn-group-list" style="">
           <button id="Size-1" onclick="saveSpecificSetting('Size', 1)">Small</button>
@@ -640,7 +640,7 @@
           <button id="MatrixSway-1" onclick="saveSpecificSetting('MatrixSway', 1)">On</button>
         </div>
         <h4 class="option-header">Visual Initial Systems</h4>
-        <p class="option-description">When enabled, the initials systems will show during gameplay
+        <p class="option-description">When enabled, the initials systems will show during a run
         </p>
         <div class="btn-group" style="margin-left: 5.5em">
           <button id="InitialVis-0" onclick="saveSpecificSetting('InitialVis', 0)">Off</button>
@@ -675,8 +675,8 @@
       <nav class="menu">
         <h1 style="font-weight: 4;font-size: 1.5rem;margin: 0px">Grades</h1>
         <p style="margin: 0px"><span style="color: red;">UNFINISHED</span><br>Play as fast as possible to earn the highest grade!</p>
-          <h4 class="option-header">Game Rule</h4>
-          <p class="option-description">Determines the tuning of the game
+          <h4 class="option-header">Software Rule</h4>
+          <p class="option-description">Determines the tuning of the software
           </p>
           <div class="btn-group" style="margin-left: 4.4em">
             <button id="grades-rule-0" onclick="changeSetting('grades', 'rule', 0)">Classic</button>
